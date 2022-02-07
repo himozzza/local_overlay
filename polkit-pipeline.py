@@ -21,4 +21,4 @@ if gitversion > last_version:
     bash("sudo ebuild polkit-{}-p{}.ebuild digest".format(gitversion, now))
 else:
     print("No updates available")
-bash("rm index*")
+bash("rm index* polkit_installed")
