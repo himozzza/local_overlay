@@ -1,12 +1,10 @@
 #!/usr/bin/python
 
 import os
-import datetime
 
 bash = os.system
 
 os.chdir("/usr/local/portage/local_overlay/sys-auth/polkit")
-now = datetime.datetime.today().strftime("%Y%m%d")
 bash("wget https://www.freedesktop.org/software/polkit/releases/")
 with open("index.html", "r") as htmlfile:
     polkit_html = htmlfile.readlines()
