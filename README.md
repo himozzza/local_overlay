@@ -1,4 +1,6 @@
 # polkit-duktape
-My polkit-duktape local_overlay autosync script with freedesktop.
+Использован ebuild с репозитория https://github.com/miramir/miramir-layman. Спасибо!
 
-Script compare latest in gentoo repo with freedesktop versions and copy polkit-duktape.ebuild new in local_overlay. 
+# polkit-pipeline
+Автоматическое обновление polkit*.ebuild в локальном оверлее в соответствии с доступной версией исходников на freedesktop, для получения более свежей версии polkit-duktape.
+
