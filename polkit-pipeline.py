@@ -15,7 +15,7 @@ with open("polkit_latest") as file:
 last_version = str(polkit_file[0].replace("-", "~").split("~")[-2])
 
 if gitversion > last_version:
-    bash("cp polkit-{}.ebuild polkit-{}-9999.ebuild".format(last_version, gitversion))
+    bash("cp polkit-{}.ebuild polkit-{}-r9.ebuild".format(last_version, gitversion))
     bash("sudo ebuild polkit-{}-r9.ebuild digest".format(gitversion))
     print("\n")
     print("ebuild update")
